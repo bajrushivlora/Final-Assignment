@@ -131,6 +131,15 @@ body {
   width: 20vh;
   height: 30vh;
 }
+.flexbox-buttons_start {
+  height: 9vw;
+  flex: 1 1 0px;
+  background-color: var(--buttonred);
+  font-family: var(--maintext);
+  font-size: 4vh;
+  color: white;
+  margin: 5px;
+}
 .flexbox-buttons_spoon {
   height: 9vw;
   flex: 1 1 0px;
@@ -158,15 +167,6 @@ body {
   color: white;
   margin: 5px;
 }
-.flexbox-buttons_next {
-  height: 9vw;
-  flex: 1 1 0px;
-  background-color: var(--buttonred);
-  font-family: var(--maintext);
-  font-size: 4vh;
-  color: white;
-  margin: 5px;
-}
 .flexbox-buttons_clean {
   height: 9vw;
   flex: 1 1 0px;
@@ -185,7 +185,7 @@ body {
   color: white;
   margin: 5px;
 }
-.flexbox-buttons_spoon:hover, .flexbox-buttons_fork:hover, .flexbox-buttons_knife:hover, .flexbox-buttons_next:hover, .flexbox-buttons_clean:hover, .flexbox-buttons_last:hover {
+.flexbox-buttons_start:hover, .flexbox-buttons_fork:hover, .flexbox-buttons_knife:hover, .flexbox-buttons_spoon:hover, .flexbox-buttons_clean:hover, .flexbox-buttons_last:hover {
   background-color: var(--buttonchange);
 }
 .flexbox-buttons_text {
@@ -276,7 +276,7 @@ body {
     flex: 1 1 0px;
   }
 
-  .flexbox-buttons_next {
+  .flexbox-buttons_start {
     height: 24vw;
     flex: 1 1 0px;
   }
@@ -365,7 +365,7 @@ body {
     flex: 1 1 0px;
   }
 
-  .flexbox-buttons_next {
+  .flexbox-buttons_start {
     height: 24vw;
     flex: 1 1 0px;
   }
@@ -459,7 +459,7 @@ body {
     flex: 1 1 0px;
   }
 
-  .flexbox-buttons_clean {
+  .flexbox-buttons_start {
     height: 24vw;
     flex: 1 1 0px;
   }
@@ -544,7 +544,7 @@ body {
     flex: 1 1 0px;
   }
 
-  .flexbox-buttons_next {
+  .flexbox-buttons_start {
     height: 24vw;
     flex: 1 1 0px;
   }

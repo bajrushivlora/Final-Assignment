@@ -11,6 +11,16 @@
     width: 20vh;
     height: 30vh;
 
+    &_start {
+        height: 9vw;
+        flex: 1 1 0px;
+        background-color: var(--buttonred);
+        font-family: var(--maintext);
+        font-size: 4vh;
+        color: white;
+        margin: 5px;
+    }
+
     &_spoon {
         height: 9vw;
         flex: 1 1 0px;
@@ -41,16 +51,6 @@
         margin: 5px;
     }
 
-    &_next {
-        height: 9vw;
-        flex: 1 1 0px;
-        background-color: var(--buttonred);
-        font-family: var(--maintext);
-        font-size: 4vh;
-        color: white;
-        margin: 5px;
-    }
-
     &_clean {
         height: 9vw;
         flex: 1 1 0px;
@@ -71,7 +71,7 @@
         margin: 5px;
     }
 
-    &_spoon:hover, &_fork:hover, &_knife:hover, &_next:hover, &_clean:hover, &_last:hover {
+    &_start:hover, &_fork:hover, &_knife:hover, &_spoon:hover, &_clean:hover, &_last:hover {
         background-color: var(--buttonchange);
     }
 
