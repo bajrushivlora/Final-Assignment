@@ -1,0 +1,84 @@
+.flexbox-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 20vh;
+    height: 30vh;
+
+    &_spoon {
+        height: 9vw;
+        flex: 1 1 0px;
+        background-color: var(--buttonred);
+        font-family: var(--maintext);
+        font-size: 4vh;
+        color: white;
+        margin: 5px;
+    }
+
+    &_fork {
+        height: 9vw;
+        flex: 1 1 0px;
+        background-color: var(--buttonred);
+        font-family: var(--maintext);
+        font-size: 4vh;
+        color: white;
+        margin: 5px;
+    }
+
+    &_knife {
+        height: 9vw;
+        flex: 1 1 0px;
+        background-color: var(--buttonred);
+        font-family: var(--maintext);
+        font-size: 4vh;
+        color: white;
+        margin: 5px;
+    }
+
+    &_next {
+        height: 9vw;
+        flex: 1 1 0px;
+        background-color: var(--buttonred);
+        font-family: var(--maintext);
+        font-size: 4vh;
+        color: white;
+        margin: 5px;
+    }
+
+    &_clean {
+        height: 9vw;
+        flex: 1 1 0px;
+        background-color: var(--buttonred);
+        font-family: var(--maintext);
+        font-size: 4vh;
+        color: white;
+        margin: 5px;
+    }
+
+    &_last {
+        height: 9vw;
+        flex: 1 1 0px;
+        background-color: var(--buttonred);
+        font-family: var(--maintext);
+        font-size: 4vh;
+        color: white;
+        margin: 5px;
+    }
+
+    &_spoon:hover, &_fork:hover, &_knife:hover, &_next:hover, &_clean:hover, &_last:hover {
+        background-color: var(--buttonchange);
+    }
+
+    &_text {
+        font-family: var(--maintext);
+        color: white;
+        font-size: 4vh;
+    }
+
+}

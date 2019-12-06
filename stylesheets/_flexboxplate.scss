@@ -1,0 +1,99 @@
+.flexbox {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    &_plate {
+        position: relative;
+        width: 50vh;
+        height: 50vh;
+        background-color: var(--lightgrey);
+        border: 7vh solid var(--white);
+        border-radius: 100%;
+    }
+}
+
+.plate {
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    transform: translate(22vh, 2vh);
+    background-color: var(--red);
+    border-radius: 100%;
+    visibility: hidden;
+
+    &_2 {
+        position: absolute;
+        width: 10vh;
+        height: 10vh;
+        background-color: var(--yellow);
+        transform: translate(34vh, 9vh);
+        border-radius: 100%;
+        visibility: hidden;
+    }
+
+    &_3 {
+        position: absolute;
+        width: 10vh;
+        height: 10vh;
+        background-color: var(--mutegreen);
+        transform: translate(38vh, 22vh);
+        border-radius: 100%;
+        visibility: hidden;
+    }
+
+    &_4 {
+        position: absolute;
+        width: 10vh;
+        height: 10vh;
+        background-color: var(--brown);
+        transform: translate(32vh, 34vh);
+        border-radius: 100%;
+        visibility: hidden;
+    }
+
+    &_5 {
+        position: absolute;
+        width: 10vh;
+        height: 10vh;
+        background-color: var(--blue);
+        transform: translate(19vh, 38vh);
+        border-radius: 100%;
+        visibility: hidden;
+    }
+
+    &_6 {
+        position: absolute;
+        width: 10vh;
+        height: 10vh;
+        background-color: var(--purple);
+        transform: translate(6vh, 32vh);
+        border-radius: 100%;
+        visibility: hidden;
+    }
+
+    &_7 {
+        position: absolute;
+        width: 10vh;
+        height: 10vh;
+        background-color: var(--mutegreen);
+        transform: translate(8vh, 6vh);
+        border-radius: 100%;
+        visibility: hidden;
+    }
+
+    &_8 {
+        position: absolute;
+        width: 10vh;
+        height: 10vh;
+        background-color: var(--brightorange);
+        transform: translate(2vh, 19vh);
+        border-radius: 100%;
+        visibility: hidden;
+    }
+
+}
+
+

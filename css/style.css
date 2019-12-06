@@ -1,0 +1,563 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--darkgrey);
+}
+
+:root {
+  --white: #ffffff;
+  --darkgrey: #3d3d3d;
+  --lightgrey: #aaaaaa;
+  --red: #A50000;
+  --yellow: #E4BF0C;
+  --mutegreen: #788B2A;
+  --brightorange: #e08b1b;
+  --brown: #8B572A;
+  --purple: #7F0037;
+  --blue: #2D736C;
+  --buttonred: #e03b2f;
+  --buttonchange: #ffa7a1;
+  --maintext: "Poppins", sans-serif;
+}
+
+.flexbox {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.flexbox_plate {
+  position: relative;
+  width: 50vh;
+  height: 50vh;
+  background-color: var(--lightgrey);
+  border: 7vh solid var(--white);
+  border-radius: 100%;
+}
+
+.plate {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  transform: translate(22vh, 2vh);
+  background-color: var(--red);
+  border-radius: 100%;
+  visibility: hidden;
+}
+.plate_2 {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  background-color: var(--yellow);
+  transform: translate(34vh, 9vh);
+  border-radius: 100%;
+  visibility: hidden;
+}
+.plate_3 {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  background-color: var(--mutegreen);
+  transform: translate(38vh, 22vh);
+  border-radius: 100%;
+  visibility: hidden;
+}
+.plate_4 {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  background-color: var(--brown);
+  transform: translate(32vh, 34vh);
+  border-radius: 100%;
+  visibility: hidden;
+}
+.plate_5 {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  background-color: var(--blue);
+  transform: translate(19vh, 38vh);
+  border-radius: 100%;
+  visibility: hidden;
+}
+.plate_6 {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  background-color: var(--purple);
+  transform: translate(6vh, 32vh);
+  border-radius: 100%;
+  visibility: hidden;
+}
+.plate_7 {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  background-color: var(--mutegreen);
+  transform: translate(8vh, 6vh);
+  border-radius: 100%;
+  visibility: hidden;
+}
+.plate_8 {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  background-color: var(--brightorange);
+  transform: translate(2vh, 19vh);
+  border-radius: 100%;
+  visibility: hidden;
+}
+
+.flexbox-buttons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  align-content: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 20vh;
+  height: 30vh;
+}
+.flexbox-buttons_spoon {
+  height: 9vw;
+  flex: 1 1 0px;
+  background-color: var(--buttonred);
+  font-family: var(--maintext);
+  font-size: 4vh;
+  color: white;
+  margin: 5px;
+}
+.flexbox-buttons_fork {
+  height: 9vw;
+  flex: 1 1 0px;
+  background-color: var(--buttonred);
+  font-family: var(--maintext);
+  font-size: 4vh;
+  color: white;
+  margin: 5px;
+}
+.flexbox-buttons_knife {
+  height: 9vw;
+  flex: 1 1 0px;
+  background-color: var(--buttonred);
+  font-family: var(--maintext);
+  font-size: 4vh;
+  color: white;
+  margin: 5px;
+}
+.flexbox-buttons_next {
+  height: 9vw;
+  flex: 1 1 0px;
+  background-color: var(--buttonred);
+  font-family: var(--maintext);
+  font-size: 4vh;
+  color: white;
+  margin: 5px;
+}
+.flexbox-buttons_clean {
+  height: 9vw;
+  flex: 1 1 0px;
+  background-color: var(--buttonred);
+  font-family: var(--maintext);
+  font-size: 4vh;
+  color: white;
+  margin: 5px;
+}
+.flexbox-buttons_last {
+  height: 9vw;
+  flex: 1 1 0px;
+  background-color: var(--buttonred);
+  font-family: var(--maintext);
+  font-size: 4vh;
+  color: white;
+  margin: 5px;
+}
+.flexbox-buttons_spoon:hover, .flexbox-buttons_fork:hover, .flexbox-buttons_knife:hover, .flexbox-buttons_next:hover, .flexbox-buttons_clean:hover, .flexbox-buttons_last:hover {
+  background-color: var(--buttonchange);
+}
+.flexbox-buttons_text {
+  font-family: var(--maintext);
+  color: white;
+  font-size: 4vh;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .flexbox_plate {
+    width: 40vh;
+    height: 40vh;
+  }
+
+  .plate {
+    transform: translate(23vh, 4vh);
+    width: 8vh;
+    height: 8vh;
+    margin: 0;
+  }
+
+  .plate_2 {
+    transform: translate(30vh, 12vh);
+    width: 8vh;
+    height: 8vh;
+    margin: 0;
+  }
+
+  .plate_3 {
+    transform: translate(28vh, 23vh);
+    width: 8vh;
+    height: 8vh;
+    margin: 0;
+  }
+
+  .plate_4 {
+    transform: translate(20vh, 30vh);
+    width: 8vh;
+    height: 8vh;
+    margin: 0;
+  }
+
+  .plate_5 {
+    transform: translate(10vh, 29vh);
+    width: 8vh;
+    height: 8vh;
+    margin: 0;
+  }
+
+  .plate_6 {
+    transform: translate(3vh, 20vh);
+    width: 8vh;
+    height: 8vh;
+    margin: 0;
+  }
+
+  .plate_7 {
+    transform: translate(12vh, 3vh);
+    width: 8vh;
+    height: 8vh;
+    margin: 0;
+  }
+
+  .plate_8 {
+    transform: translate(3vh, 10vh);
+    width: 8vh;
+    height: 8vh;
+    margin: 0;
+  }
+
+  .flexbox-buttons {
+    flex-flow: row;
+    width: 280px;
+  }
+
+  .flexbox-buttons_spoon {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_fork {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_knife {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_next {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_clean {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_last {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  .flexbox_plate {
+    width: 40vh;
+    height: 40vh;
+  }
+
+  .plate {
+    transform: translate(23vh, 4vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_2 {
+    transform: translate(30vh, 12vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_3 {
+    transform: translate(28vh, 23vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_4 {
+    transform: translate(20vh, 30vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_5 {
+    transform: translate(10vh, 29vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_6 {
+    transform: translate(3vh, 20vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_7 {
+    transform: translate(12vh, 3vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_8 {
+    transform: translate(3vh, 10vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .flexbox-buttons {
+    flex-flow: row;
+    width: 335px;
+  }
+
+  .flexbox-buttons_spoon {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_fork {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_knife {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_next {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_clean {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_last {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 736px) {
+  .flexbox_plate {
+    width: 40vh;
+    height: 40vh;
+  }
+
+  .plate {
+    transform: translate(23vh, 4vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_2 {
+    transform: translate(30vh, 12vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_3 {
+    transform: translate(28vh, 23vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_4 {
+    transform: translate(20vh, 30vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_5 {
+    transform: translate(10vh, 29vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_6 {
+    transform: translate(3vh, 20vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_7 {
+    transform: translate(12vh, 3vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .plate_8 {
+    transform: translate(3vh, 10vh);
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .flexbox-buttons {
+    flex-flow: row;
+    width: 373px;
+  }
+
+  .flexbox-buttons_spoon {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_fork {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_knife {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_next {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_clean {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_last {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .flexbox_plate {
+    width: 31vh;
+    height: 31vh;
+    border: 6vh solid var(--white);
+  }
+
+  .plate {
+    transform: translate(19vh, 4vh);
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .plate_2 {
+    transform: translate(23vh, 11vh);
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .plate_3 {
+    transform: translate(21vh, 19vh);
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .plate_4 {
+    transform: translate(14vh, 23vh);
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .plate_5 {
+    transform: translate(6vh, 21vh);
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .plate_6 {
+    transform: translate(2vh, 14vh);
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .plate_7 {
+    transform: translate(11vh, 2vh);
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .plate_8 {
+    transform: translate(4vh, 6vh);
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .flexbox-buttons {
+    flex-flow: row;
+    width: 335px;
+  }
+
+  .flexbox-buttons_spoon {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_fork {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_knife {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_next {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_clean {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+
+  .flexbox-buttons_last {
+    height: 24vw;
+    flex: 1 1 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
