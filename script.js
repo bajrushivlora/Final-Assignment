@@ -107,6 +107,19 @@ var checkForItems = function(){
       document.querySelector(".plate_7").style.filter = 'saturate' + '(' + saturation + ')';
       document.querySelector(".plate_8").style.filter = 'saturate' + '(' + saturation + ')';
     }
+
+    if(localStorage.getItem('skew')) {
+      var skew = localStorage.getItem('skew');
+      console.log(skew);
+      document.querySelector(".plate").style.transform = 'skew' + '(' + skew + 'deg' + ')';
+      document.querySelector(".plate_2").style.transform = 'skew' + '(' + skew + 'deg' + ')';    
+      document.querySelector(".plate_3").style.transform = 'skew' + '(' + skew + 'deg' + ')';
+      document.querySelector(".plate_4").style.transform = 'skew' + '(' + skew + 'deg' + ')';
+      document.querySelector(".plate_5").style.transform = 'skew' + '(' + skew + 'deg' + ')';
+      document.querySelector(".plate_6").style.transform = 'skew' + '(' + skew + 'deg' + ')';
+      document.querySelector(".plate_7").style.transform = 'skew' + '(' + skew + 'deg' + ')';
+      document.querySelector(".plate_8").style.transform = 'skew' + '(' + skew + 'deg' + ')';
+    }
 }
 
 // ---------------------------------------------------------------------------------------------------------
@@ -206,8 +219,8 @@ var saveUserInfo = function(){
       var rand2 = randomNumber(-60, 60);
       var rand3 = randomNumber(-30, 70);
       var rand4 = randomNumber(-90, 80);
-      var rand5 = randomNumber(-100, 30);
-      var rand6 = randomNumber(-70, 20);
+      var rand5 = randomNumber(-130, 30);
+      var rand6 = randomNumber(-100, 20);
       var rand7 = randomNumber(-80, 50);
       var rand8 = randomNumber(-20, 40);
 
@@ -270,16 +283,37 @@ var saveUserInfo = function(){
 
   document.querySelector(".flexbox-buttons_knife").addEventListener('click', moveFood);
   function moveFood() {
+
+    var newSkew1 = randomNumber(10, 300);
+    var newSkew2 = randomNumber(20, 300);
+    var newSkew3 = randomNumber(60, 200);
+    var newSkew4 = randomNumber(80, 100);
+    var newSkew5 = randomNumber(30, 300);
+    var newSkew6 = randomNumber(50, 150);
+    var newSkew7 = randomNumber(40, 100);
+    var newSkew8 = randomNumber(70, 90);
+
+    localStorage.setItem('skew', newSkew);
+    document.querySelector(".plate").style.transform = 'skew' + '(' + newSkew1 + 'deg' + ')';
+    document.querySelector(".plate_2").style.transform = 'skew' + '(' + newSkew2 + 'deg' + ')';    
+    document.querySelector(".plate_3").style.transform = 'skew' + '(' + newSkew3 + 'deg' + ')';
+    document.querySelector(".plate_4").style.transform = 'skew' + '(' + newSkew4 + 'deg' + ')';
+    document.querySelector(".plate_5").style.transform = 'skew' + '(' + newSkew5 + 'deg' + ')';
+    document.querySelector(".plate_6").style.transform = 'skew' + '(' + newSkew6 + 'deg' + ')';
+    document.querySelector(".plate_7").style.transform = 'skew' + '(' + newSkew7 + 'deg' + ')';
+    document.querySelector(".plate_8").style.transform = 'skew' + '(' + newSkew8 + 'deg' + ')';
+
+
     var newSaturation = '0.4';
-  localStorage.setItem('saturate', newSaturation);
-  document.querySelector(".plate").style.filter = 'saturate' + '(' + newSaturation + ')';
-  document.querySelector(".plate_2").style.filter = 'saturate' + '(' + newSaturation + ')';
-  document.querySelector(".plate_3").style.filter = 'saturate' + '(' + newSaturation + ')';
-  document.querySelector(".plate_4").style.filter = 'saturate' + '(' + newSaturation + ')';
-  document.querySelector(".plate_5").style.filter = 'saturate' + '(' + newSaturation + ')';
-  document.querySelector(".plate_6").style.filter = 'saturate' + '(' + newSaturation + ')';
-  document.querySelector(".plate_7").style.filter = 'saturate' + '(' + newSaturation + ')';
-  document.querySelector(".plate_8").style.filter = 'saturate' + '(' + newSaturation + ')';
+    localStorage.setItem('saturate', newSaturation);
+    document.querySelector(".plate").style.filter = 'saturate' + '(' + newSaturation + ')';
+    document.querySelector(".plate_2").style.filter = 'saturate' + '(' + newSaturation + ')';
+    document.querySelector(".plate_3").style.filter = 'saturate' + '(' + newSaturation + ')';
+    document.querySelector(".plate_4").style.filter = 'saturate' + '(' + newSaturation + ')';
+    document.querySelector(".plate_5").style.filter = 'saturate' + '(' + newSaturation + ')';
+    document.querySelector(".plate_6").style.filter = 'saturate' + '(' + newSaturation + ')';
+    document.querySelector(".plate_7").style.filter = 'saturate' + '(' + newSaturation + ')';
+    document.querySelector(".plate_8").style.filter = 'saturate' + '(' + newSaturation + ')';
   }
 
   document.querySelector(".flexbox-buttons_clean").addEventListener('click', warpFood);
