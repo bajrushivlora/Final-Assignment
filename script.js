@@ -293,7 +293,15 @@ var saveUserInfo = function(){
     var newSkew7 = randomNumber(40, 100);
     var newSkew8 = randomNumber(70, 90);
 
-    localStorage.setItem('skew', newSkew);
+    localStorage.setItem('skew', newSkew1);
+    localStorage.setItem('skew', newSkew2);
+    localStorage.setItem('skew', newSkew3);
+    localStorage.setItem('skew', newSkew4);
+    localStorage.setItem('skew', newSkew5);
+    localStorage.setItem('skew', newSkew6);
+    localStorage.setItem('skew', newSkew7);
+    localStorage.setItem('skew', newSkew8);
+
     document.querySelector(".plate").style.transform = 'skew' + '(' + newSkew1 + 'deg' + ')';
     document.querySelector(".plate_2").style.transform = 'skew' + '(' + newSkew2 + 'deg' + ')';    
     document.querySelector(".plate_3").style.transform = 'skew' + '(' + newSkew3 + 'deg' + ')';
