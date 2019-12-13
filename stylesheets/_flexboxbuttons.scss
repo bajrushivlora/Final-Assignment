@@ -61,7 +61,7 @@
         margin: 5px;
     }
 
-    &_last {
+    &_done {
         height: 9vw;
         flex: 1 1 0px;
         background-color: var(--buttonred);
@@ -71,7 +71,7 @@
         margin: 5px;
     }
 
-    &_start:hover, &_fork:hover, &_knife:hover, &_spoon:hover, &_clean:hover, &_last:hover {
+    &_start:hover, &_fork:hover, &_knife:hover, &_spoon:hover, &_clean:hover, &_done:hover {
         background-color: var(--buttonchange);
     }
 

@@ -176,7 +176,7 @@ body {
   color: white;
   margin: 5px;
 }
-.flexbox-buttons_last {
+.flexbox-buttons_done {
   height: 9vw;
   flex: 1 1 0px;
   background-color: var(--buttonred);
@@ -185,7 +185,7 @@ body {
   color: white;
   margin: 5px;
 }
-.flexbox-buttons_start:hover, .flexbox-buttons_fork:hover, .flexbox-buttons_knife:hover, .flexbox-buttons_spoon:hover, .flexbox-buttons_clean:hover, .flexbox-buttons_last:hover {
+.flexbox-buttons_start:hover, .flexbox-buttons_fork:hover, .flexbox-buttons_knife:hover, .flexbox-buttons_spoon:hover, .flexbox-buttons_clean:hover, .flexbox-buttons_done:hover {
   background-color: var(--buttonchange);
 }
 .flexbox-buttons_text {
@@ -286,7 +286,7 @@ body {
     flex: 1 1 0px;
   }
 
-  .flexbox-buttons_last {
+  .flexbox-buttons_done {
     height: 24vw;
     flex: 1 1 0px;
   }
@@ -375,7 +375,7 @@ body {
     flex: 1 1 0px;
   }
 
-  .flexbox-buttons_last {
+  .flexbox-buttons_done {
     height: 24vw;
     flex: 1 1 0px;
   }
@@ -464,7 +464,7 @@ body {
     flex: 1 1 0px;
   }
 
-  .flexbox-buttons_last {
+  .flexbox-buttons_done {
     height: 24vw;
     flex: 1 1 0px;
   }
@@ -554,7 +554,7 @@ body {
     flex: 1 1 0px;
   }
 
-  .flexbox-buttons_last {
+  .flexbox-buttons_done {
     height: 24vw;
     flex: 1 1 0px;
   }
